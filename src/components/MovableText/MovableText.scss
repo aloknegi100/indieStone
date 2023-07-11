@@ -1,0 +1,20 @@
+.movable {
+  font-size: 24px;
+  padding: 30px;
+
+  p {
+    white-space: nowrap;
+    animation: scrolly 30s linear infinite;
+    font-weight: 300;
+    font-family: "Gill Sans", sans-serif;
+  }
+
+  @keyframes scrolly {
+    0% {
+      transform: translateX(100%); /* Start from the right side */
+    }
+    100% {
+      transform: translateX(-100%); /* End at the left side */
+    }
+  }
+}

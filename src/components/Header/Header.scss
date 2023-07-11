@@ -1,0 +1,64 @@
+.header {
+  .top {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 12px 45px;
+
+    .left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: rgb(221, 127, 65);
+      font-size: 30px;
+
+      input {
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: 300;
+
+        &::placeholder {
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .center {
+      flex: 1;
+      text-align: center;
+
+      h1 {
+        font-weight: 200;
+        font-size: 38px;
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 30px;
+      color: #1d2328;
+      font-weight: 300;
+      font-size: 15px;
+
+      .icons {
+        font-size: 27px;
+        color: rgb(221, 127, 65);
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}

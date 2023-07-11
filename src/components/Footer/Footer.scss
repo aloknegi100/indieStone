@@ -1,0 +1,35 @@
+.footer {
+  background-color: #f9f8f3;
+
+  .top {
+    display: flex;
+    height: 573px;
+    border: 1px solid lightgray;
+    .topLeft {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url("../../assets/awardsBackground.webp") no-repeat center;
+      position: relative;
+      box-sizing: border-box; /* Add this property */
+
+      p {
+        position: absolute;
+        top: 70px;
+        letter-spacing: 0.1em;
+        font-weight: 400;
+        color: #dd7f41;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+    }
+
+    .topRight {
+      flex: 1;
+      background: url("../../assets/SubscribeEmailBackground.jpeg") no-repeat
+        center;
+      background-size: cover;
+    }
+  }
+}
