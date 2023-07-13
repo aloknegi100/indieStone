@@ -1,8 +1,14 @@
 import React from "react";
 import { BsPerson } from "react-icons/bs";
 import { LiaSearchSolid, LiaShoppingBasketSolid } from "react-icons/lia";
+import {useNavigate} from "react-router-dom"
+
+
 import "./Header.scss";
 const Header = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="header">
       <div className="top">
@@ -15,7 +21,7 @@ const Header = () => {
         <div className="right">
           <span>Showrooms</span>
           <span>Information</span>
-          <span className="icons">
+          <span onClick={()=>navigate('/my-account')} className="userlogo icons">
             <BsPerson />
           </span>
           <span className="icons">

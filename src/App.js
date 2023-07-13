@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Collections from "./pages/Collections";
+import Form from "./pages/Form/Form";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collections" element={<Collections />} />
+        <Route path="/my-account" element={<Form />} />
       </Routes>
       <Footer />
     </div>

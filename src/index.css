@@ -1,7 +1,9 @@
 *{
   padding:0;
   margin: 0;
-  font-family: "GillSans,sans-serif", sans-serif;
-box-sizing: border-box;
+  /* font-family: "GillSans,sans-serif", sans-serif; */
+  font-family: Juana, serif !important;
+
+  box-sizing: border-box;
 
 }
