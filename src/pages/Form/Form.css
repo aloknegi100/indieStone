@@ -1,0 +1,166 @@
+.form {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+    /* margin:80px; */
+}
+
+
+
+.form .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Juana, serif !important;
+    height: 250px;
+    color: #DD7F41;
+    padding: 40px;
+}
+
+.container .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9F3;
+    width: 100%;
+    height: 100%;
+}
+
+.title h1 {
+    font-size: 72px;
+    line-height: 130%;
+    font-weight: 400;
+
+}
+
+.form_container{
+    /* height: 500px; */
+    /* margin-bottom: 50px; */
+    /* background-color: blue; */
+    
+}
+
+.inputbox{
+    text-transform: uppercase;
+    font-family: GillSans,sans-serif;
+    
+}
+.inputbox label{
+    
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.inputbox input{
+    font-size: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+.form_container .form_box{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    /* padding: 20px; */
+    /* flex-direction: row; */
+}
+
+.form_box .return_user,.new_user{
+    border: 1px solid #E4E4E5;
+    padding: 50px;
+    /* margin: 10%; */
+    
+    
+    /* height: 60%; */
+    width: 40%;
+}
+.inputbox{
+    background-color: white;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    /* margin-top: 15px; */
+    color:#808387 ;
+    text-transform: uppercase;
+    font-size: 14px;
+    /* justify-content; */
+}
+
+.check input{
+    margin-right:10px ;
+    transform: scale(1.2);
+    background-color: #dd7f41;
+}
+
+.new_user{
+    background-color: #f9f9f9;
+    border: none;
+}
+
+.temp_div{
+    margin: 0 15px 0 15px;
+}
+
+h2{
+    color: #1D2327;
+}
+
+input{
+    border: none;
+    
+    height: 20px;
+}
+input[type="button"]{
+    border: 1px solid #dd7f41;
+    text-transform: uppercase;
+    font-size: 15px;
+
+    letter-spacing: .1em;
+
+    color: white;
+    background-color: #dd7f41;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 20px;
+}
+input[type="button"]:hover{
+    background-color: #1d2328;
+    cursor: pointer;
+}
+.inputbox{
+    border: 1px solid #E4E4E5;
+    padding: 10px;
+    color: #808387;
+    margin-top: 15px;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.lost_link{
+    text-transform: uppercase;
+    color: #1D2327;
+    font-size: 15px;
+    /* text-decoration: underline; */
+    border-bottom: 1px solid #1d2328;
+    padding: 10px;
+    /* text-underline-offset: 10px; */
+}
+
+.checkbox-div{
+    margin-top: 15px;
+}
+
+.r_c_bottom{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
