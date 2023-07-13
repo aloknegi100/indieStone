@@ -32,4 +32,41 @@
       background-size: cover;
     }
   }
+  .bottom {
+    padding: 40px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    .bottomColumn {
+      // align-items: center;
+      h3 {
+        font-family: Juana, serif;
+        margin-bottom: 6%;
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.1em;
+      }
+      span {
+        font-family: "GillSans,sans-serif", sans-serif;
+        font-weight: 200;
+        font-size: 15px;
+        letter-spacing: 0.05em;
+      }
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      line-height: 130%;
+      gap: 10px;
+    }
+  }
+  .companyText {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: #54585a;
+  }
 }

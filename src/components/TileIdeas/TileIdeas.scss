@@ -1,0 +1,74 @@
+.wrapper {
+  min-height: 461px;
+  display: flex;
+  width: calc(100% - 80px);
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  margin: auto;
+  .leftContainer {
+    width: 25%;
+    position: relative;
+    .leftParent {
+      width: 100%;
+    }
+    .leftChild {
+      width: 52%;
+      position: absolute;
+      top: 16rem;
+      left: 7rem;
+    }
+  }
+  .middleContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 2rem;
+    color: #dd7f41;
+    h1 {
+      font-size: 82px;
+      padding: 0 2rem;
+      text-align: center;
+      font-family: Juana, serif;
+      font-weight: 300;
+      line-height: 130%;
+    }
+    p {
+      margin-top: 2rem;
+      color: #707376;
+      width: 69%;
+      line-height: 130%;
+      font-weight: 200;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h6 {
+      display: flex;
+      align-items: center;
+      letter-spacing: 1px;
+      font-size: 15px;
+      color: #1d2328;
+      font-weight: 400;
+      cursor: pointer;
+    }
+  }
+  .rightContainer {
+    width: 25%;
+    position: relative;
+    .rightChild {
+      width: 52%;
+      position: absolute;
+      top: 4rem;
+      left: -1.2rem;
+      z-index: 22;
+    }
+    .rightParent {
+      width: 87%;
+      position: absolute;
+      top: 6.5rem;
+      right: 0;
+    }
+  }
+}
