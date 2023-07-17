@@ -1,0 +1,61 @@
+.bigBox {
+  //   height: 730px;
+  min-width: 42%;
+  margin-bottom: 4.5rem;
+  cursor: pointer;
+  overflow: hidden;
+
+  .bigBoxWrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h6 {
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 15px;
+      text-align: center;
+      color: white;
+      position: absolute;
+      bottom: 2rem;
+      border-bottom: 1px solid white;
+      padding-bottom: 0.3rem;
+      &:hover {
+        border-bottom: 1px solid #dd7f41;
+      }
+    }
+
+    .textBox {
+      color: white;
+      position: absolute;
+      z-index: 2;
+      p {
+        letter-spacing: 0.075em;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 18px;
+        text-align: center;
+      }
+      h1 {
+        margin-top: 1rem;
+        font-size: 72px;
+        font-family: Juana, serif;
+        font-weight: 300;
+      }
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: 2.5s ease-out;
+
+      &:hover {
+        filter: brightness(0.6);
+        transform: scale(1.13);
+      }
+    }
+  }
+}
