@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import Collections from "./pages/Collections";
 import Form from "./pages/Form/Form";
+import Account from "./pages/Account/Account";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collections" element={<Collections />} />
-        <Route path="/my-account" element={<Form />} />
+        <Route path="/my-account" element={<Account />} />
       </Routes>
       <Footer />
     </div>
