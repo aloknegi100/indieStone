@@ -53,56 +53,56 @@ function Form() {
     return (
         <>
         <Heading/>
-        <div className="form">
+        <div className="aform">
 
-            <div className="form_container">
+            <div className="aform_container">
 
                 {responsemsg &&
-                    <div className="form_messages">
+                    <div className="aform_messages">
                         {responsemsg}
                     </div>
                 }
 
-                <div className="form_box">
-                    <div className="return_user">
+                <div className="aform_box">
+                    <div className="areturn_user">
                         <div>
                             <h2>Returning Customer</h2>
                             <div>
-                                <div className="inputbox">
+                                <div className="ainputbox">
                                     <label for="email">Email</label>
                                     <input name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                                 </div>
-                                <div className="inputbox">
+                                <div className="ainputbox">
                                     <label>Password</label>
                                     <input type="password" name="password" value={psd} onChange={(e) => setPsd(e.target.value)} />
                                 </div>
                             </div>
                             <input type="button" value="login" onClick={handleLogin} />
-                            <div className="r_c_bottom">
-                                <div className="check">
+                            <div className="ar_c_bottom">
+                                <div className="acheck">
                                     <input type="checkbox" />
                                     <p>remember me</p>
                                 </div>
-                                <div className="lost_link">Lost Your Password?</div>
+                                <div className="alost_link">Lost Your Password?</div>
                             </div>
                         </div>
                     </div>
-                    <div className="temp_div"></div>
-                    <div className="new_user">
+                    <div className="atemp_div"></div>
+                    <div className="anew_user">
                         <div>
                             <h2>New Customer</h2>
                             <div>
-                                <div className="inputbox">
+                                <div className="ainputbox">
                                     <label>EMAIL ADDRESS *</label>
                                     <input name="newemail" value={newEmail} onChange={(e) => setNewEmail(e.target.value)} />
                                 </div>
-                                <div className="inputbox">
+                                <div className="ainputbox">
                                     <label>CREATE PASSWORD *</label>
                                     <input name="newpassword" value={newpsd} onChange={(e) => setNewPsd(e.target.value)} />
                                 </div>
                             </div>
-                            <div className="checkbox-div">
-                                <div className="check">
+                            <div className="acheckbox-div">
+                                <div className="acheck">
                                     <input type="checkbox" />
                                     <p>SUBSCRIBE TO OUR NEWSLETTER</p>
                                 </div>
