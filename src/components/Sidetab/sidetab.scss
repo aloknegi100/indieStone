@@ -1,0 +1,25 @@
+.sideCont{
+    background: #f9f8f3;
+    // width: 22%;
+    height: 350px;
+    padding: 30px;
+    margin: 50px;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+
+}
+.sideCont div{
+//  background-color: yellow;   
+ width: 80%;
+//  margin: 20px;
+}
+
+.sidetabdiv p{
+    margin: 20px;
+    cursor: pointer;
+}
+
+.current{
+    color: #DD7E41;
+}

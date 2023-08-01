@@ -2,6 +2,9 @@ import { useState } from "react";
 import "./Form.css";
 import axios from 'axios'
 import Cookies from 'js-cookie';
+import { useNavigate } from "react-router-dom";
+import Heading from "../../components/AccountHeading/Heading";
+
 
 function Form() {
 
@@ -12,22 +15,27 @@ function Form() {
 
     const [responsemsg, setResponseMsg] = useState("")
 
+    const navigate = useNavigate()
+
 
     const handleLogin = async () => {
 
 
         let response = await axios.post("http://localhost:1111/login", { email, psd })
-        console.log("response ",response )
         setResponseMsg(response.data.message)
 
-        Cookies.set('token', response.data.token);
+        // Cookies.set('token', response.data.token);
+        if(response.data.success){
+            Cookies.set('token', response.data.token);
+            navigate('/my-account')
+        }
+
 
 
     }
 
     const handleRegister = async () => {
         let response = await axios.post("http://localhost:1111/register", { newEmail, newpsd })
-        console.log("response ", response)
 
         // if (response.data.success) {
             setResponseMsg(response.data.message)
@@ -43,6 +51,8 @@ function Form() {
 
 
     return (
+        <>
+        <Heading/>
         <div className="form">
 
             <div className="form_container">
@@ -103,6 +113,7 @@ function Form() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
 export default Form;

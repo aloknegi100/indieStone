@@ -1,53 +1,35 @@
 import { useEffect, useState } from "react";
-// import "./Form.css";
 import Cookies from 'js-cookie';
 import Form from "../Form/Form";
-
+import Heading from "../../components/AccountHeading/Heading";
+import UAccount from "../../components/UserAccount/Account";
+import { useNavigate } from "react-router-dom";
 function Account() {
 
+    const navigate = useNavigate()
     const [isLoggedIn, setIsLoggedIn] = useState(false)
+    let token = Cookies.get('token')
 
+    
     useEffect(() => {
-        let token = Cookies.get('token')
-        if (token)
+        
+        if (token) {
             setIsLoggedIn(true)
-
-    }, [])
+            setTimeout(() => {
+                Cookies.remove('token');
+                navigate('/my-account')
+            }, 3600000);
+        }else{
+            setIsLoggedIn(false)
+        }
+    }, [token])
 
 
     return (
 
         <>
             {isLoggedIn === true ?
-                (<div className="account">
-                    <div className="container">
-                        <div className="title">
-                            <h1>My account</h1>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="leftside">
-                            <div>
-                                <div>
-                                    <p>DASHBOARD</p>
-                                    <p>ORDERS</p>
-                                    <p>WISH LIST</p>
-                                    <p>ACCOUNT DETAILS</p>
-                                    <p>LOGOUT</p>
-                                </div>
-
-
-                                
-                            </div>
-                        </div>
-                        <div className="rightside">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-
-                </div>) :
+                <UAccount /> :
                 <Form />
             }
         </>
