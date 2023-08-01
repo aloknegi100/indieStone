@@ -1,0 +1,41 @@
+.blogContent {
+  width: calc(100% * 2 / 3);
+  margin: auto;
+  line-height: 130%;
+  color: #1d2328;
+  font-family: GillSans, sans-serif;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  h4 {
+    line-height: 130%;
+    margin-bottom: 2.7rem;
+    font-family: Juana, serif;
+  }
+  .blogPoints {
+    color: #1d2328;
+    font-family: GillSans, sans-serif;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    h1 {
+      text-align: left;
+      width: 100%;
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 130%;
+      span {
+        color: #dd7f41;
+        font-family: "Times New Roman", Times, serif;
+        margin-right: 10px;
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 160%;
+      font-weight: 300;
+      font-family: "Gill Sans", sans-serif;
+    }
+  }
+}

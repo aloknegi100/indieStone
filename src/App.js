@@ -8,6 +8,8 @@ import Order from "./components/UserAccount/Order";
 import Wishlist from "./components/UserAccount/WishList";
 import Address from "./components/UserAccount/Address";
 import EditAddress from "./components/UserAccount/EditAddress";
+import Form from "./pages/Form/Form";
+import Blog from "./pages/Blog/Blog";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/collections" element={<Collections />} />
         <Route path="/my-account" element={<Account />} />
         <Route path="/my-account/orders" element={<Order />} />

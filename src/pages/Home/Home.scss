@@ -1,0 +1,22 @@
+.big {
+  width: calc(100% - 80px);
+  margin: auto;
+  margin-top: 11rem;
+  .b12 {
+    display: flex;
+    justify-content: space-between;
+    .moveUp {
+      position: relative;
+      top: -6rem;
+    }
+  }
+  .b34 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    .moveUp {
+      position: relative;
+      top: -12rem;
+    }
+  }
+}

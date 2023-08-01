@@ -1,0 +1,51 @@
+.titleCardContainer {
+  width: calc(100% - 80px);
+  margin: auto;
+  height: 532px;
+  display: flex;
+  margin-top: 40px;
+  .titleTextBox {
+    height: 100%;
+    width: 50%;
+    background-color: #f9f8f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    span {
+      color: #808387;
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 200;
+    }
+    h1 {
+      font-size: 52px;
+      color: #1d2328;
+      font-family: Juana, serif;
+      font-weight: 300;
+      text-align: center;
+    }
+    p {
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      line-height: 160%;
+      color: #1d2328;
+      font-family: "GillSans,sans-serif", sans-serif;
+      max-width: 530px;
+    }
+  }
+  .titleImageBox {
+    height: 100%;
+    width: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import leftChild from "../../assets/leftChild.jpeg";
 import rightParent from "../../assets/rightParent.jpeg";
 import rightChild from "../../assets/rightChild.jpeg";
 import { LiaGreaterThanSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 const TileIdeas = () => {
   return (
@@ -20,10 +21,12 @@ const TileIdeas = () => {
           compiled some of our favourite small-space tips to help you find the
           perfect tiles for your scheme.
         </p>
-        <h6>
-          READ THE BLOG &emsp;
-          <LiaGreaterThanSolid />
-        </h6>
+        <Link to={"/blog"} className="link">
+          <h6>
+            READ THE BLOG &emsp;
+            <LiaGreaterThanSolid />
+          </h6>
+        </Link>
       </div>
       <div className="rightContainer">
         <img src={rightChild} alt="" className="rightChild" />
