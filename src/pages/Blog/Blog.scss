@@ -6,6 +6,10 @@
   font-family: GillSans, sans-serif;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 0;
+
   h4 {
     line-height: 130%;
     margin-bottom: 2.7rem;
@@ -37,5 +41,25 @@
       font-weight: 300;
       font-family: "Gill Sans", sans-serif;
     }
+  }
+}
+.exploreLinkDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+  height: 20rem;
+  color: #dd7f41;
+  flex-direction: column;
+  gap: 5rem;
+  h1 {
+    color: #dd7f41;
+    font-size: 52px;
+    padding: 0 2rem;
+    text-align: center;
+    font-family: Juana, serif;
+    font-weight: 300;
+    line-height: 130%;
+    text-decoration: underline;
   }
 }

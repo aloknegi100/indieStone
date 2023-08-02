@@ -30,9 +30,11 @@
       flex: 1;
       text-align: center;
 
-      h1 {
+      h1,
+      .link {
         font-weight: 200;
         font-size: 38px;
+        color: #1d2328;
       }
     }
 
@@ -65,5 +67,8 @@
     font-size: 18px;
     font-weight: 300;
     border-bottom: 1px solid lightgrey;
+    .link {
+      color: #1d2328;
+    }
   }
 }

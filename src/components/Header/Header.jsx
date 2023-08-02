@@ -1,13 +1,11 @@
 import React from "react";
 import { BsPerson } from "react-icons/bs";
 import { LiaSearchSolid, LiaShoppingBasketSolid } from "react-icons/lia";
-import {useNavigate} from "react-router-dom"
-
+import { Link, useNavigate } from "react-router-dom";
 
 import "./Header.scss";
 const Header = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="header">
@@ -16,12 +14,17 @@ const Header = () => {
           <LiaSearchSolid /> <input type="text" placeholder="I'm Looking For" />
         </div>
         <div className="center">
-          <h1>INDIE STONE</h1>
+          <Link to="/" className="link">
+            <h1>INDIE STONE</h1>
+          </Link>
         </div>
         <div className="right">
           <span>Showrooms</span>
           <span>Information</span>
-          <span onClick={()=>navigate('/my-account')} className="userlogo icons">
+          <span
+            onClick={() => navigate("/my-account")}
+            className="userlogo icons"
+          >
             <BsPerson />
           </span>
           <span className="icons">
@@ -30,7 +33,9 @@ const Header = () => {
         </div>
       </div>
       <div className="bottom">
-        <span>Shop</span>
+        <Link to="/products" className="link">
+          <span>Shop</span>
+        </Link>
         <span>Bathroom</span>
         <span>Kitchen</span>
         <span>Living</span>

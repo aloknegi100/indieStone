@@ -1,0 +1,26 @@
+.navigationHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  height: 50px;
+  font-size: 15px;
+  font-family: "GillSans,sans-serif", sans-serif;
+
+  h6 {
+    &:first-child {
+      color: #808387;
+      padding-right: 1rem;
+    }
+
+    font-size: 15px;
+    line-height: 130%;
+    color: #1d2328;
+    font-weight: 200;
+  }
+  span {
+    color: #808387;
+    padding-right: 1rem;
+    font-weight: 200;
+  }
+}

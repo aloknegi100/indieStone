@@ -3,6 +3,7 @@ import TitleCard from "../../components/TitleCard/TitleCard";
 import { blogTitleCard } from "../../constants/titleCard";
 import { blog1 } from "../../constants/blog";
 import "./Blog.scss";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -41,6 +42,11 @@ const Blog = () => {
             );
           })}
         </div>
+      </div>
+      <div className="exploreLinkDiv">
+        <Link to="/">
+          <h1>Explore More Bathroom Tiles</h1>
+        </Link>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="container">
+    <div className="containerSlide">
       <div className="buttons">
         <input
           type="radio"
