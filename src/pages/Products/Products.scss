@@ -1,0 +1,8 @@
+.productsContainer {
+  margin-bottom: 5rem;
+  .filterProductContainer {
+    display: flex;
+    width: calc(100% - 80px);
+    margin: auto;
+  }
+}
