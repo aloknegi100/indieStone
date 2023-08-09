@@ -11,16 +11,19 @@
     &:first-child {
       color: #808387;
       padding-right: 1rem;
+      cursor: pointer;
     }
 
     font-size: 15px;
     line-height: 130%;
     color: #1d2328;
     font-weight: 200;
+    cursor: pointer;
   }
   span {
     color: #808387;
     padding-right: 1rem;
     font-weight: 200;
+    cursor: pointer;
   }
 }

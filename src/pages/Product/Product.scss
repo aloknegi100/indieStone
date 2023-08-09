@@ -1,0 +1,196 @@
+.productWrapper {
+  margin: auto;
+  width: calc(100% - 80px);
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+  .productContainer {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    gap: 3%;
+    .imageList {
+      flex: 1.11;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      img {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+    .imageShow {
+      flex: 8;
+      img {
+        width: 100%;
+      }
+    }
+    .productDetail {
+      flex: 6;
+      border-top: 1px solid lightgrey;
+      h1 {
+        text-align: center;
+        font-size: 42px;
+        font-family: Juana, serif;
+        font-weight: 300;
+        color: #1d2328;
+        line-height: 130%;
+        border-bottom: 1px solid lightgrey;
+        padding: 3rem 0;
+      }
+      .priceTag {
+        display: flex;
+        border: 1px solid lightgrey;
+        width: 190px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 35px;
+        font-size: 15px;
+        margin: auto;
+        position: relative;
+        top: calc(-1.1rem - 7.5px);
+        background-color: white;
+        h6 {
+          font-size: 15px;
+          border-right: 1px solid lightgray;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          letter-spacing: 0.075em;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: #dd7f41;
+          padding-right: 10px;
+        }
+        span {
+          padding-left: 10px;
+        }
+      }
+      .switchDetailButtons {
+        display: flex;
+        justify-content: space-between;
+        h1 {
+          font-size: 12px;
+          border-bottom: 1px solid lightgray;
+          color: grey;
+          padding: 15px;
+          padding-bottom: 7px;
+          letter-spacing: 0.075em;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+      }
+      .switchDetails {
+        margin-top: 1.5rem;
+        p {
+          font-size: 18px;
+          color: #1d2328;
+          font-weight: 300;
+          line-height: 130%;
+          font-family: "GillSans,sans-serif", sans-serif;
+        }
+        h3 {
+          letter-spacing: 0.075em;
+          text-transform: uppercase;
+          font-weight: 400;
+          margin-bottom: 1rem;
+          font-family: Juana, serif;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%;
+          table-layout: fixed;
+          line-height: 130%;
+
+          td {
+            border: 1px solid #e5e5e5;
+            padding: 0.5em 1em;
+            letter-spacing: 0.075em;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #1d2328;
+            font-weight: 300;
+            word-wrap: break-word;
+
+            &:first-child {
+              background-color: lightgray;
+              font-weight: 300;
+              background-color: #f9f9f9;
+              color: gray;
+              font-family: "GillSans,sans-serif", sans-serif;
+            }
+          }
+        }
+      }
+      .orderSizing {
+        border-top: 1px solid lightgray;
+        margin-top: 2rem;
+        padding-top: 3rem;
+        h3 {
+          font-family: Juana, serif;
+          font-size: 25px;
+          font-weight: 400;
+        }
+        .chooseSizeButton {
+          outline: none;
+          border: 1px solid lightgray;
+          width: 100%;
+          padding: 1em 2em 1em 1em;
+          margin-top: 1rem;
+          cursor: pointer;
+          background-color: transparent;
+          h4 {
+            font-family: Juana, serif;
+            font-size: 18px;
+            font-weight: 300;
+            font-family: "GillSans,sans-serif", sans-serif;
+          }
+        }
+        .chooseQuantity {
+          display: flex;
+          margin-top: 1rem;
+          width: 100%;
+          justify-content: space-between;
+          align-items: center;
+          gap: 10px;
+          div {
+            border: 1px solid lightgrey;
+            padding: 9px 9px;
+            flex: 1;
+            color: gray;
+            h6 {
+              font-weight: 300;
+              letter-spacing: 0.075em;
+            }
+            input {
+              font-size: 18px;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .addToBasketButton {
+        outline: none;
+        border: 1px solid #dd7f41;
+        width: 100%;
+        padding: 1em 2em 1em 1em;
+        margin-top: 1rem;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: "GillSans,sans-serif", sans-serif;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        &:hover {
+          background-color: #1d2328;
+          border-color: #1d2328;
+          color: #fff;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}

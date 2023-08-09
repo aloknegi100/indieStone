@@ -1,5 +1,5 @@
 .filterBox {
-  width: 25%;
+  width: 24%;
   .filterHeading {
     display: flex;
     justify-content: space-between;
@@ -23,6 +23,7 @@
   .clearFilterButton {
     width: 100%;
     background-color: #fff;
+    border: 1px solid lightgrey;
     border-color: #e5e5e5;
     color: #1d2328;
     font-size: 15px;
@@ -32,6 +33,7 @@
     text-transform: uppercase;
     transition: 0.3s;
     cursor: pointer;
+    margin-bottom: 1rem;
     &:hover {
       background-color: #1d2328;
       border-color: #1d2328;
@@ -64,7 +66,7 @@
       }
       .subFilter {
         width: 100%;
-        transition: 2s ease;
+        transition: 1.5s ease;
         max-height: 30rem;
         overflow: hidden;
         margin-top: 1rem;
@@ -76,13 +78,14 @@
           font-size: 13px;
           margin-bottom: 1rem;
           font-weight: 300;
+          cursor: pointer;
         }
       }
 
       .hideClass {
         max-height: 0;
         margin-top: 0;
-        transition: 2s ease;
+        transition: 1.5s ease;
       }
     }
   }

@@ -10,6 +10,7 @@ import EditAddress from "./components/UserAccount/EditAddress";
 import Form from "./pages/Form/Form";
 import Blog from "./pages/Blog/Blog";
 import Products from "./pages/Products/Products";
+import Product from "./pages/Product/Product";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/product/:id" element={<Product />} />
         <Route path="/my-account" element={<Account />} />
         <Route path="/my-account/orders" element={<Order />} />
         <Route path="/my-account/wishlist" element={<Wishlist />} />

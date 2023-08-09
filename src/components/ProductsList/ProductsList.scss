@@ -1,4 +1,7 @@
 .ProductsList {
-  width: 75%;
+  width: 76%;
   padding-left: 2rem;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }

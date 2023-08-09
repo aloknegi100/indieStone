@@ -1,0 +1,38 @@
+.productCard {
+  width: 31%;
+  min-height: 320px;
+  background: #f9f9f9;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+  .productCardImage {
+    height: 270px;
+    min-width: 270px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .productNameContainer {
+    padding-top: 20px;
+    font-size: 15px;
+    line-height: 130%;
+    width: 100%;
+    color: #1d2328;
+    font-family: "GillSans,sans-serif", sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    h6 {
+      font-size: 16px;
+      color: #dd7f41;
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+}
