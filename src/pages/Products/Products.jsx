@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import { allProductsTitleCard } from "../../constants/titleCard";
 import NavigationHeader from "../../components/NavigationHeader/NavigationHeader";
 import ProductTitleCard from "../../components/ProductTitleCard/ProductTitleCard";
@@ -7,6 +7,8 @@ import FilterBox from "../../components/FilterBox/FilterBox";
 import "./Products.scss";
 
 const Products = () => {
+  const [filters,setFilters]=useState([])
+
   return (
     <div className="productsContainer">
       <NavigationHeader first="Collections" second="All Products" />
@@ -16,8 +18,8 @@ const Products = () => {
         image={allProductsTitleCard.image}
       />
       <div className="filterProductContainer">
-        <FilterBox />
-        <ProductsList />
+        <FilterBox filters={filters} setFilters={setFilters}/>
+        <ProductsList filters={filters}/>
       </div>
     </div>
   );
