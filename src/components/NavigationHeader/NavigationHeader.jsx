@@ -8,7 +8,7 @@ const NavigationHeader = ({ first, second, third }) => {
     <div className="navigationHeader">
       <h6>{first}</h6>
       <span>{">"}</span>
-      <h6 onClick={() => navigate("/products")}>{second}</h6>
+      <h6 onClick={() => navigate("/products/all")}>{second}</h6>
       {third && (
         <>
           <span>{">"}</span>

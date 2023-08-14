@@ -33,19 +33,40 @@ const Header = () => {
         </div>
       </div>
       <div className="bottom">
-        <Link to="/products" className="link">
+        <Link to="/products/all" className="link">
           <span>Shop</span>
         </Link>
-        <span>Bathroom</span>
-        <span>Kitchen</span>
-        <span>Living</span>
-        <span>Wall</span>
-        <span>Floor</span>
-        <span>Outdoor</span>
-        <span>Flexing & Sealing</span>
-        <span>Fabrication & Slabs</span>
-        <span>Trends</span>
-        <span>Clearence</span>
+        <Link to="/products/BATHROOM" className="link">
+          <span>Bathroom</span>
+        </Link>
+        <Link to="/products/KITCHEN" className="link">
+          <span>Kitchen</span>
+        </Link>
+        <Link to="/products/LIVING" className="link">
+          <span>Living</span>
+        </Link>
+        <Link to="/products/WALL" className="link">
+          <span>Wall</span>
+        </Link>
+        <Link to="/products/FLOOR" className="link">
+          <span>Floor</span>
+        </Link>
+        <Link to="/products/OUTDOOR" className="link">
+          <span>Outdoor</span>
+        </Link>
+        <Link to="/products/WALL & FLOOR" className="link">
+          <span>Flexing & Sealing</span>
+        </Link>
+        <Link to="/products/WALL & FLOOR" className="link">
+          <span>Fabrication & Slabs</span>
+        </Link>
+        <Link to="/products/WALL & FLOOR" className="link">
+          <span>Trends</span>
+        </Link>
+        <Link to="/products/CLEARANCE" className="link">
+          <span>Clearence</span>
+        </Link>
+        
       </div>
     </div>
   );
