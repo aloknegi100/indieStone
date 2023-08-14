@@ -8,6 +8,18 @@ const FilterBox = ({filters,setFilters}) => {
   const [filter, setFilter] = useState([]);
 
   const handleFilterClick=(item,property)=>{
+    if(filters.find((x)=>x===property)){
+      let index=filters.indexOf(property);
+      
+      if(index!==-1)
+      {
+        let temp=[...filters]
+
+        temp.splice(index,1);
+        setFilters(temp)
+        return;
+      }
+    }
     setFilters((prev)=>{
       return [...prev,property]
     })
@@ -31,7 +43,7 @@ const FilterBox = ({filters,setFilters}) => {
     }
   };
 
-  console.log("filter", filter);
+  console.log("filter", filters);
   useEffect(() => {
     fetchAllProducts();
   }, []);
@@ -60,7 +72,11 @@ const FilterBox = ({filters,setFilters}) => {
               >
                 <span>Show All</span>
                 {filter?.[item]?.map((property, idx) => (
-                  <span key={100 + idx} onClick={()=>handleFilterClick(item,property)}>{property}</span>
+                  <span key={100 + idx} onClick={()=>handleFilterClick(item,property)} style={(()=>{
+                    if(filters.find((x)=>x===property)){
+                      return {background:"#1d2328",color:"white",padding:10}
+                    }
+                  })()}>{property}</span>
                 ))}
               </div>
             </div>
